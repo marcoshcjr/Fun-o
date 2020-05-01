@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let A = [];
+        let aux = 0;
+        let K = 0;
+        let tamArray = 0;
+        K = prompt("Informe a quantidade de rotações: ");
+        tamArray = prompt("Informe a quantidade de número que deseja colocar no lista: ")
+        for(let y = 0; y < tamArray; y++){
+            A[y] = prompt("Informe o número que deseja colocar no lista: ");
+        }
+
+        function rotacionar(A, K){
+            for(let x = 0; x < K; x++){
+                aux = A [A.length-1]
+                A.pop();
+                A.unshift(aux);
+            }
+        }
+    </script>            
+</body>
+</html>
